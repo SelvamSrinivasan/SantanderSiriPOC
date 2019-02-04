@@ -14,6 +14,16 @@
 		2C1F88662208A99C0063DA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1F88642208A99C0063DA27 /* LaunchScreen.storyboard */; };
 		2C1F88712208A99C0063DA27 /* SantanderSiriPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F88702208A99C0063DA27 /* SantanderSiriPOCTests.swift */; };
 		2C1F887C2208A99C0063DA27 /* SantanderSiriPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F887B2208A99C0063DA27 /* SantanderSiriPOCUITests.swift */; };
+		2C1F88902208A9DA0063DA27 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F888F2208A9DA0063DA27 /* IntentHandler.swift */; };
+		2C1F88992208A9DA0063DA27 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1F88982208A9DA0063DA27 /* IntentsUI.framework */; };
+		2C1F889C2208A9DA0063DA27 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F889B2208A9DA0063DA27 /* IntentViewController.swift */; };
+		2C1F889F2208A9DA0063DA27 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1F889D2208A9DA0063DA27 /* MainInterface.storyboard */; };
+		2C1F88A32208A9DA0063DA27 /* BankDetailsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C1F88962208A9DA0063DA27 /* BankDetailsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C1F88A62208A9DA0063DA27 /* BankDetails.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2C1F888D2208A9DA0063DA27 /* BankDetails.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2C1F88AF2208AB350063DA27 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F88AE2208AB350063DA27 /* Intents.intentdefinition */; };
+		2C1F88B02208AC4B0063DA27 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F88AE2208AB350063DA27 /* Intents.intentdefinition */; };
+		2C1F88B12208AC4C0063DA27 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F88AE2208AB350063DA27 /* Intents.intentdefinition */; };
+		2C1F88B32208AE7E0063DA27 /* BankInfoIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1F88B22208AE7E0063DA27 /* BankInfoIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +41,36 @@
 			remoteGlobalIDString = 2C1F88572208A99B0063DA27;
 			remoteInfo = SantanderSiriPOC;
 		};
+		2C1F88A12208A9DA0063DA27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F88502208A99B0063DA27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1F88952208A9DA0063DA27;
+			remoteInfo = BankDetailsUI;
+		};
+		2C1F88A42208A9DA0063DA27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C1F88502208A99B0063DA27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C1F888C2208A9DA0063DA27;
+			remoteInfo = BankDetails;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2C1F88AD2208A9DA0063DA27 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2C1F88A32208A9DA0063DA27 /* BankDetailsUI.appex in Embed App Extensions */,
+				2C1F88A62208A9DA0063DA27 /* BankDetails.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2C1F88582208A99B0063DA27 /* SantanderSiriPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SantanderSiriPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +86,17 @@
 		2C1F88772208A99C0063DA27 /* SantanderSiriPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SantanderSiriPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C1F887B2208A99C0063DA27 /* SantanderSiriPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SantanderSiriPOCUITests.swift; sourceTree = "<group>"; };
 		2C1F887D2208A99C0063DA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1F888D2208A9DA0063DA27 /* BankDetails.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BankDetails.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1F888F2208A9DA0063DA27 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		2C1F88912208A9DA0063DA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1F88962208A9DA0063DA27 /* BankDetailsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BankDetailsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1F88982208A9DA0063DA27 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		2C1F889B2208A9DA0063DA27 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		2C1F889E2208A9DA0063DA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2C1F88A02208A9DA0063DA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1F88AE2208AB350063DA27 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		2C1F88B22208AE7E0063DA27 /* BankInfoIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankInfoIntentHandler.swift; sourceTree = "<group>"; };
+		2C1F88B42208C6110063DA27 /* SantanderSiriPOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SantanderSiriPOC.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +121,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C1F888A2208A9DA0063DA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1F88932208A9DA0063DA27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1F88992208A9DA0063DA27 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +145,9 @@
 				2C1F885A2208A99B0063DA27 /* SantanderSiriPOC */,
 				2C1F886F2208A99C0063DA27 /* SantanderSiriPOCTests */,
 				2C1F887A2208A99C0063DA27 /* SantanderSiriPOCUITests */,
+				2C1F888E2208A9DA0063DA27 /* BankDetails */,
+				2C1F889A2208A9DA0063DA27 /* BankDetailsUI */,
+				2C1F88972208A9DA0063DA27 /* Frameworks */,
 				2C1F88592208A99B0063DA27 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +158,8 @@
 				2C1F88582208A99B0063DA27 /* SantanderSiriPOC.app */,
 				2C1F886C2208A99C0063DA27 /* SantanderSiriPOCTests.xctest */,
 				2C1F88772208A99C0063DA27 /* SantanderSiriPOCUITests.xctest */,
+				2C1F888D2208A9DA0063DA27 /* BankDetails.appex */,
+				2C1F88962208A9DA0063DA27 /* BankDetailsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +167,14 @@
 		2C1F885A2208A99B0063DA27 /* SantanderSiriPOC */ = {
 			isa = PBXGroup;
 			children = (
+				2C1F88B42208C6110063DA27 /* SantanderSiriPOC.entitlements */,
 				2C1F885B2208A99B0063DA27 /* AppDelegate.swift */,
 				2C1F885D2208A99B0063DA27 /* ViewController.swift */,
 				2C1F885F2208A99B0063DA27 /* Main.storyboard */,
 				2C1F88622208A99C0063DA27 /* Assets.xcassets */,
 				2C1F88642208A99C0063DA27 /* LaunchScreen.storyboard */,
 				2C1F88672208A99C0063DA27 /* Info.plist */,
+				2C1F88AE2208AB350063DA27 /* Intents.intentdefinition */,
 			);
 			path = SantanderSiriPOC;
 			sourceTree = "<group>";
@@ -125,6 +197,34 @@
 			path = SantanderSiriPOCUITests;
 			sourceTree = "<group>";
 		};
+		2C1F888E2208A9DA0063DA27 /* BankDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2C1F888F2208A9DA0063DA27 /* IntentHandler.swift */,
+				2C1F88912208A9DA0063DA27 /* Info.plist */,
+				2C1F88B22208AE7E0063DA27 /* BankInfoIntentHandler.swift */,
+			);
+			path = BankDetails;
+			sourceTree = "<group>";
+		};
+		2C1F88972208A9DA0063DA27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C1F88982208A9DA0063DA27 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C1F889A2208A9DA0063DA27 /* BankDetailsUI */ = {
+			isa = PBXGroup;
+			children = (
+				2C1F889B2208A9DA0063DA27 /* IntentViewController.swift */,
+				2C1F889D2208A9DA0063DA27 /* MainInterface.storyboard */,
+				2C1F88A02208A9DA0063DA27 /* Info.plist */,
+			);
+			path = BankDetailsUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +235,13 @@
 				2C1F88542208A99B0063DA27 /* Sources */,
 				2C1F88552208A99B0063DA27 /* Frameworks */,
 				2C1F88562208A99B0063DA27 /* Resources */,
+				2C1F88AD2208A9DA0063DA27 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2C1F88A22208A9DA0063DA27 /* PBXTargetDependency */,
+				2C1F88A52208A9DA0063DA27 /* PBXTargetDependency */,
 			);
 			name = SantanderSiriPOC;
 			productName = SantanderSiriPOC;
@@ -181,6 +284,40 @@
 			productReference = 2C1F88772208A99C0063DA27 /* SantanderSiriPOCUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2C1F888C2208A9DA0063DA27 /* BankDetails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1F88AA2208A9DA0063DA27 /* Build configuration list for PBXNativeTarget "BankDetails" */;
+			buildPhases = (
+				2C1F88892208A9DA0063DA27 /* Sources */,
+				2C1F888A2208A9DA0063DA27 /* Frameworks */,
+				2C1F888B2208A9DA0063DA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankDetails;
+			productName = BankDetails;
+			productReference = 2C1F888D2208A9DA0063DA27 /* BankDetails.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2C1F88952208A9DA0063DA27 /* BankDetailsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C1F88A72208A9DA0063DA27 /* Build configuration list for PBXNativeTarget "BankDetailsUI" */;
+			buildPhases = (
+				2C1F88922208A9DA0063DA27 /* Sources */,
+				2C1F88932208A9DA0063DA27 /* Frameworks */,
+				2C1F88942208A9DA0063DA27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankDetailsUI;
+			productName = BankDetailsUI;
+			productReference = 2C1F88962208A9DA0063DA27 /* BankDetailsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +330,11 @@
 				TargetAttributes = {
 					2C1F88572208A99B0063DA27 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					2C1F886B2208A99C0063DA27 = {
 						CreatedOnToolsVersion = 10.1;
@@ -201,6 +343,12 @@
 					2C1F88762208A99C0063DA27 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 2C1F88572208A99B0063DA27;
+					};
+					2C1F888C2208A9DA0063DA27 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					2C1F88952208A9DA0063DA27 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -220,6 +368,8 @@
 				2C1F88572208A99B0063DA27 /* SantanderSiriPOC */,
 				2C1F886B2208A99C0063DA27 /* SantanderSiriPOCTests */,
 				2C1F88762208A99C0063DA27 /* SantanderSiriPOCUITests */,
+				2C1F888C2208A9DA0063DA27 /* BankDetails */,
+				2C1F88952208A9DA0063DA27 /* BankDetailsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +399,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C1F888B2208A9DA0063DA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1F88942208A9DA0063DA27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1F889F2208A9DA0063DA27 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1F88AF2208AB350063DA27 /* Intents.intentdefinition in Sources */,
 				2C1F885E2208A99B0063DA27 /* ViewController.swift in Sources */,
 				2C1F885C2208A99B0063DA27 /* AppDelegate.swift in Sources */,
 			);
@@ -277,6 +443,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2C1F88892208A9DA0063DA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1F88B32208AE7E0063DA27 /* BankInfoIntentHandler.swift in Sources */,
+				2C1F88B02208AC4B0063DA27 /* Intents.intentdefinition in Sources */,
+				2C1F88902208A9DA0063DA27 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C1F88922208A9DA0063DA27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C1F88B12208AC4C0063DA27 /* Intents.intentdefinition in Sources */,
+				2C1F889C2208A9DA0063DA27 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +474,16 @@
 			isa = PBXTargetDependency;
 			target = 2C1F88572208A99B0063DA27 /* SantanderSiriPOC */;
 			targetProxy = 2C1F88782208A99C0063DA27 /* PBXContainerItemProxy */;
+		};
+		2C1F88A22208A9DA0063DA27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C1F88952208A9DA0063DA27 /* BankDetailsUI */;
+			targetProxy = 2C1F88A12208A9DA0063DA27 /* PBXContainerItemProxy */;
+		};
+		2C1F88A52208A9DA0063DA27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C1F888C2208A9DA0063DA27 /* BankDetails */;
+			targetProxy = 2C1F88A42208A9DA0063DA27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +502,14 @@
 				2C1F88652208A99C0063DA27 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2C1F889D2208A9DA0063DA27 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C1F889E2208A9DA0063DA27 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,7 +634,9 @@
 		2C1F88812208A99C0063DA27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SantanderSiriPOC/SantanderSiriPOC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2M7YV2QJGS;
 				INFOPLIST_FILE = SantanderSiriPOC/Info.plist;
@@ -449,7 +654,9 @@
 		2C1F88822208A99C0063DA27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SantanderSiriPOC/SantanderSiriPOC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2M7YV2QJGS;
 				INFOPLIST_FILE = SantanderSiriPOC/Info.plist;
@@ -546,6 +753,82 @@
 			};
 			name = Release;
 		};
+		2C1F88A82208A9DA0063DA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M7YV2QJGS;
+				INFOPLIST_FILE = BankDetailsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SiriTest.SantanderSiriPOC.BankDetailsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C1F88A92208A9DA0063DA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M7YV2QJGS;
+				INFOPLIST_FILE = BankDetailsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SiriTest.SantanderSiriPOC.BankDetailsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C1F88AB2208A9DA0063DA27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M7YV2QJGS;
+				INFOPLIST_FILE = BankDetails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SiriTest.SantanderSiriPOC.BankDetails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C1F88AC2208A9DA0063DA27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2M7YV2QJGS;
+				INFOPLIST_FILE = BankDetails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SiriTest.SantanderSiriPOC.BankDetails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +864,24 @@
 			buildConfigurations = (
 				2C1F88872208A99C0063DA27 /* Debug */,
 				2C1F88882208A99C0063DA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C1F88A72208A9DA0063DA27 /* Build configuration list for PBXNativeTarget "BankDetailsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1F88A82208A9DA0063DA27 /* Debug */,
+				2C1F88A92208A9DA0063DA27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C1F88AA2208A9DA0063DA27 /* Build configuration list for PBXNativeTarget "BankDetails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C1F88AB2208A9DA0063DA27 /* Debug */,
+				2C1F88AC2208A9DA0063DA27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

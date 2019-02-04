@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        requestAuthorisation()
         return true
     }
 
@@ -41,6 +43,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    fileprivate func requestAuthorisation() {
+        INPreferences.requestSiriAuthorization { status in
+            if status == .authorized {
+                print("Hey, Siri!")
+            } else {
+                print("Nay, Siri!")
+            }
+        }
+    }
+    
+    func application(_ application: UIApplication,
+                     continue userActivity: NSUserActivity,
+                     restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        let viewController = window?.rootViewController as! ViewController
+        viewController.showLabel()
+        return true
+    }
 }
 
